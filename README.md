@@ -1,2 +1,2 @@
 # calendar
-Script para crear calendarios en photoshop
+Script para crear calendarios en idioma español para photoshop 
