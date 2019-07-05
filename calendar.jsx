@@ -79,13 +79,13 @@ var offset = myDate.getDay();
 var days = getDaysInMonth(aMonth+1,year)
 var month = Months[aMonth] + " " + year +"\r";
 if(winMac()){
-month += "Do\tLu\tMa\tMi\tJu\tVi\t\tSa\r"
+month += "Lu\tMa\tMi\tJu\tVi\t\tSa\tDo\r"
 month += "--------------------------------------\r";
 }else{
-month += "Do\tLu\tMa\tMi\tJu\tVi\t\tSa\r"
+month += "Lu\tMa\tMi\tJu\tVi\t\tSa\tDo\r"
 month += "------------------------------------\r";
 	}
-month += noOfDays(offset,days);
+month += noOfDays(offset-1,days);
 doc = app.activeDocument;
 var startRulerUnits = preferences.rulerUnits
 app.preferences.rulerUnits = Units.PIXELS
